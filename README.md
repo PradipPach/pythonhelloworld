@@ -3,6 +3,10 @@
 This guide will walk you through creating a simple Python Hello World app, containerizing it with Docker, and running it locally.
 
 ---
+```
+git clone https://github.com/atulkamble/pythonhelloworld.git
+cd pythonhelloworld
+```
 
 ## 📁 Project Structure
 
