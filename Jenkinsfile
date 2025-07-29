@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
     agent any
 
     stages {
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     dockerImage = docker.build('python-hello-world')
-                    sh 'Docker Image build suceesfull'
+                    echo 'Docker Image build suceesfull'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     dockerImage.run()
-                    sh 'Container created'
+                    echo 'Container created'
                 }
             }
         }
